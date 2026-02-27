@@ -170,6 +170,17 @@ elseif ($page == 'transaksi_hapus') {
     include 'pages/transaksi_hapus.php';
 }
 
+/* =============== LAPORAN =================== */
+elseif ($page == 'laporan'){
+    include 'pages/laporan.php';
+}
+
+/* ============ PROFILE ============== */
+
+elseif ($page == 'profile') {
+    include 'pages/profile.php';
+}
+
 else {
     echo "<h3>Selamat datang di Dashboard</h3>";
 }
