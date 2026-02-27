@@ -126,6 +126,7 @@ if (!isset($_SESSION['email'])) {
     <?php
 $page = isset($_GET['page']) ? $_GET['page'] : '';
 
+/* ================= LIST PRODUK ============== */
 if ($page == 'tambah') {
     include 'pages/tambah.php';
 }
@@ -138,6 +139,9 @@ elseif ($page == 'edit') {
 elseif ($page == 'hapus') {
     include 'pages/hapus.php';
 }
+
+/* ================= CUSTOMER ================= */
+
 elseif ($page == 'customer') {
     include 'pages/customer.php';
 }
@@ -150,10 +154,27 @@ elseif ($page == 'customer_edit') {
 elseif ($page == 'customer_hapus') {
     include 'pages/customer_hapus.php';
 }
+
+/* ================= TRANSAKSI ================= */
+
+elseif ($page == 'transaksi') {
+    include 'pages/transaksi.php';
+}
+elseif ($page == 'transaksi_tambah') {
+    include 'pages/transaksi_tambah.php';
+}
+elseif ($page == 'transaksi_edit') {
+    include 'pages/transaksi_edit.php';
+}
+elseif ($page == 'transaksi_hapus') {
+    include 'pages/transaksi_hapus.php';
+}
+
 else {
     echo "<h3>Selamat datang di Dashboard</h3>";
 }
 ?>
+
 
 </div>
  
